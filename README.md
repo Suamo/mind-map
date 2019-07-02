@@ -12,3 +12,8 @@ npm run watch
 HTML tags as plain text:
 "<" - "&lt;"
 ">" - "&gt;"
+
+Labels classes:
+* label-danger
+* label-warning
+* sub
