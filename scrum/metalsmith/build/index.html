@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        a {
+            cursor: pointer;
+        }
+    
+        .tooltip-inner b {
+            color: lawngreen;
+        }
+    
+        .tooltip-inner b.r {
+            color: #ff5722;
+        }
+    
+        .tooltip-inner {
+            text-align: left;
+            max-width: 400px;
+            width: 400px;
+        }
+    
+        .tooltip-inner table tr {
+            border-bottom: 1px solid white;
+        }
+    
+        .tooltip-inner ul {
+            padding-left: 15px;
+        }
+    
+        .hidden {
+            visibility: hidden;
+        }
+    
+        body {
+            background-color: #333;
+        }
+    
+        .label-success {
+            background-color: #dff0d821 !important;
+            color: #deffdf57 !important;
+        }
+    
+        h4 {
+            font-weight: bold;
+            color: dodgerblue;
+        }
+    
+        .sub {
+            color: darkgoldenrod;
+        }
+    
+        .label-warning {
+            background-color: #f0ad4e6e !important;
+        }
+    
+        .label-danger {
+            background-color: #e91e63 !important;
+        }
+    </style>
+    <script>
+        function changeTitles() {
+            let links = document.getElementsByTagName("a");
+            for (let link of links) {
+                let tooltipId = link.attributes.title.value;
+                let tooltip = document.getElementById(tooltipId);
+                link.setAttribute("data-toggle", "tooltip");
+                link.setAttribute("data-placement", "auto right");
+                link.setAttribute("data-html", "true");
+                let current = link.getAttribute("class");
+                if (current) {
+                    link.setAttribute("class", current + " label");
+                } else {
+                    link.setAttribute("class", "label label-success");
+                }
+                if (tooltip) {
+                    link.setAttribute("title", tooltip.innerHTML);
+                }
+            }
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        }
+    </script>
+</head>
+<body onload="changeTitles()" class="container">
+<div>
+    <h4>Scrum</h4>
+    <ul>
+        <li>
+            <b class="sub">General:</b>
+            <a title="a1_1">history</a>
+            <a title="a1_2">importance</a>
+            <a title="a1_3">other tools</a>
+        </li>
+        <li>
+            <b class="sub">Beans:</b>
+            <a title="a2_1" class="label-danger">lifecycle</a>
+        </li>
+    </ul>
+
+    <div class="hidden">
+        <div id="a1_1">
+            <b>Scrum invented</b> - early 1990s<br/>
+            <b>Scrum Guide first version</b> - 2010
+        </div>
+        <div id="a1_2">
+            Each element of the framework serves a specific purpose that is essential to the overall value
+            and results realized with Scrum.<br/>
+            Changing the core design or ideas of Scrum, leaving out elements, or not following the rules of Scrum,
+            covers up problems and limits the benefits of Scrum, potentially even rendering it useless.
+        </div>
+        <div id="a1_3">
+            As Scrum is being used, patterns, processes, and insights that fit the Scrum framework as described
+            in this document, may be found, applied and devised. Their description is beyond the purpose of the
+            Scrum Guide because they are context sensitive and differ widely between Scrum uses. Such tactics for
+            using within the Scrum framework vary widely and are described elsewhere.
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div id="a2_1">
+            <ul>
+                <li>Load Bean definitions
+                    <ul>
+                        <li>Bean Definitions are loaded</li>
+                        <li>Bean Definitions are processed</li>
+                    </ul>
+                </li>
+                <li>Create Beans
+                    <ul>
+                        <li>constructor call</li>
+                        <li>setter call</li>
+                        <li>postprocessor “init” methods call</li>
+                    </ul>
+                </li>
+                <li>Beans are ready and being used</li>
+                <li>Beans are destroyed
+                    <ul>
+                        <li>destroy method call</li>
+                        <li>handing over to garbage collector</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
