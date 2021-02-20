@@ -3,58 +3,335 @@
     <ul>
         <li>
             <b class="sub">General:</b>
-            <a title="a1_1">history</a>
-            <a title="a1_2">importance</a>
-            <a title="a1_3">other tools</a>
+            <a title="a1_1">about</a>
+            <a title="a1_2">history</a>
+            <a title="a1_3" class="label-danger">scrum team</a>
         </li>
         <li>
-            <b class="sub">Beans:</b>
-            <a title="a2_1" class="label-danger">lifecycle</a>
+            <b class="sub">Events:</b>
+            <a title="a2_1">sprint</a>
+            <a title="a2_2">planning</a>
+            <a title="a2_3">daily scrum</a>
+            <a title="a2_4">review</a>
+            <a title="a2_5">retrospective</a>
+        </li>
+        <li>
+            <b class="sub">Scrum Pillars:</b>
+            <a title="a3_1" class="label-danger">transparency</a>
+            <a title="a3_2" class="label-danger">inspection</a>
+            <a title="a3_3" class="label-danger">adaptation</a>
+        </li>
+        <li>
+            <b class="sub">Scrum Values:</b>
+            <a title="a4_1" class="label-warning">commitment</a>
+            <a title="a4_2" class="label-warning">focus</a>
+            <a title="a4_3" class="label-warning">openness</a>
+            <a title="a4_4" class="label-warning">respect</a>
+            <a title="a4_5" class="label-warning">courage</a>
+        </li>
+        <li>
+            <b class="sub">Accountabilities:</b>
+            <a title="a5_1">developers</a>
+            <a title="a5_2">product owner</a>
+            <a title="a5_3">scrum master</a>
+        </li>
+        <li>
+            <b class="sub">Scrum Artifacts:</b>
+            <a title="a6_1">product backlog</a>
+            <a title="a6_2">sprint backlog</a>
+            <a title="a6_3">increment</a>
+        </li>
+        <li>
+            <b class="sub">Commitments:</b>
+            <a title="a7_1">product goal</a>
+            <a title="a7_2">sprint goal</a>
+            <a title="a7_3">definition of done</a>
         </li>
     </ul>
 
     <div class="hidden">
         <div id="a1_1">
-            <b>Scrum invented</b> - early 1990s<br/>
-            <b>Scrum Guide first version</b> - 2010
-        </div>
-        <div id="a1_2">
+            <ul>
+                <li>Is free</li>
+                <li>Immutable</li>
+                <li>While implementing only parts of Scrum is possible, the result is not Scrum</li>
+                <li>Scrum exists only in its entirety and functions well as a container for other techniques,
+                    methodologies, and practices.
+                </li>
+            </ul><br/>
             <b>Each element</b> of the framework serves a specific purpose that is essential to the overall value
-            and results realized with Scrum.<p/>
+            and results realized with Scrum.<br/>
             Changing the core design or ideas of Scrum, leaving out elements, or not following the rules of Scrum,
             covers up problems and limits the benefits of Scrum, potentially even rendering it useless.
         </div>
+        <div id="a1_2">
+            <ul>
+                <li><b>Scrum invented</b> - early 1990s</li>
+                <li><b>Scrum Guide first version</b> - 2010</li>
+                <li><b>By</b> - Ken Schwaber and Jeff Sutherland</li>
+            </ul>
+        </div>
         <div id="a1_3">
-            As Scrum is being used, patterns, processes, and insights that fit the Scrum framework as described
-            in this document, may be found, applied and devised. Their description is beyond the purpose of the
-            Scrum Guide because they are context sensitive and differ widely between Scrum uses. Such tactics for
-            using within the Scrum framework vary widely and are described elsewhere.
+            <ul>
+                <li>Fundamental unit of Scrum</li>
+                <li>10 or less people</li>
+                <li>Consists of Scrum Master, Product Owner and Developers</li>
+                <li>No sub-teams or hierarchies</li>
+                <li>Focused on one objective at a time – Product Goal</li>
+                <li>Cross-functional and self-managing</li>
+                <li>Responsible for all product-related activities from stakeholder collaboration, verification,
+                    maintenance, operation, experimentation, research and development, and anything else that might
+                    be required
+                </li>
+                <li>Accountable for creating a valuable, useful Increment every Sprint</li>
+            </ul>
         </div>
     </div>
 
     <div class="hidden">
         <div id="a2_1">
             <ul>
-                <li>Load Bean definitions
+                <li>Container for all other events. Sprints are the heartbeat of Scrum, where ideas are turned into value.</li>
+                <li>No changes are made that would endanger the Sprint Goal</li>
+                <li>Quality does not decrease</li>
+                <li>Product Backlog is refined as needed</li>
+                <li>Scope may be clarified and renegotiated with the Product Owner as more is learned</li>
+                <li>Enables predictability by ensuring inspection and adaptation of progress toward a Product Goal</li>
+            </ul>
+        </div>
+        <div id="a2_2">
+            <ul>
+                <li>Initiates the Sprint by laying out the work to be performed for the Sprint</li>
+                <li>Maximum of eight hours for a one-month Sprint</li>
+                <li>Resulting plan is created by the collaborative work of the entire Scrum Team</li>
+                <li>Product Owner ensures that attendees are prepared to discuss the most important Product Backlog
+                    items and how they map to the Product Goal</li>
+                <li>Scrum Team may also invite other people to attend Sprint Planning to provide advice. </li>
+            </ul>
+            <b>Topics</b>
+            <ul>
+                <li>Why is this Sprint valuable?
                     <ul>
-                        <li>Bean Definitions are loaded</li>
-                        <li>Bean Definitions are processed</li>
+                        <li>Scrum Team then collaborates to define a Sprint Goal</li>
                     </ul>
                 </li>
-                <li>Create Beans
+                <li>What can be Done this Sprint?
                     <ul>
-                        <li>constructor call</li>
-                        <li>setter call</li>
-                        <li>postprocessor “init” methods call</li>
+                        <li>Select items from the Product Backlog to include in the current Sprint (Spring Backlog)</li>
+                        <li>Refine these items during this process, which increases understanding and confidence</li>
+                        <li>Select how much can be completed within a Sprint (using capacity knowledge)</li>
                     </ul>
                 </li>
-                <li>Beans are ready and being used</li>
-                <li>Beans are destroyed
+                <li>How will the chosen work get done?
                     <ul>
-                        <li>destroy method call</li>
-                        <li>handing over to garbage collector</li>
+                        <li>Plan the work necessary to create an Increment that meets the Definition of Done</li>
+                        <li>Decompose Product Backlog items into smaller work items of one day or less</li>
                     </ul>
                 </li>
+            </ul>
+        </div>
+        <div id="a2_3">
+            <ul>
+                <li>15-minute event</li>
+                <li>Only for developers</li>
+                <li>Adapt the Spring Backlog as necessary, adjusting the upcoming planned work</li>
+                <li>Inspect progress towards the Spring Goal</li>
+                <li>Produces an actionable plan for the next day of work</li>
+                <li>Improve communications, identify impediments, promote quick decision-making,
+                    and consequently eliminate the need for other meetings.</li>
+            </ul>
+        </div>
+        <div id="a2_4">
+            <ul>
+                <li>Purpose: inspect the outcome of the Sprint and determine future adaptations</li>
+                <li>Timeboxed to a maximum of four hours for a one-month Sprint</li>
+                <li>Scrum Team presents the results of their work to key stakeholders and progress toward the
+                    Product Goal is discussed</li>
+                <li>Attendees collaborate on what to do next</li>
+                <li>Product Backlog may also be adjusted to meet new opportunities</li>
+                <li>Sprint Review is a working session and the Scrum Team should avoid limiting it to a presentation.</li>
+            </ul>
+        </div>
+        <div id="a2_5">
+            <ul>
+                <li>Purpose: plan ways to increase quality and effectiveness</li>
+                <li>Timeboxed to a maximum of three hours for a one- month Sprint.</li>
+                <li>Scrum Team inspects how the last Sprint went with regards to individuals, interactions, processes,
+                    tools, and their Definition of Done</li>
+                <li>Scrum Team discusses what went well during the Sprint, what problems it encountered, and how those
+                    problems were (or were not) solved.</li>
+                <li>The Scrum Team identifies the most helpful changes to improve its effectiveness. The most impactful
+                    improvements are addressed as soon as possible. They may even be added to the Sprint Backlog for
+                    the next Sprint.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div id="a3_1">
+            Visibility of process and work. Enables <b>Inspection</b>.
+        </div>
+        <div id="a3_2">
+            Inspection of artifact and progress to goals. Detects problems. Enables <b>Adaptation</b>.
+        </div>
+        <div id="a3_3">
+            Adjusting the process in case bad process or result product.
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div id="a4_1">
+            Commitment to achieving goals and supporting each other.
+        </div>
+        <div id="a4_2">
+            Focus on the work and goals.
+        </div>
+        <div id="a4_3">
+            Openness about the work and challenges.
+        </div>
+        <div id="a4_4">
+            Respect each other.
+        </div>
+        <div id="a4_5">
+            Courage to do the right things and work on tough problems.
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div id="a5_1">
+            <ul>
+                <li>Committed to create any aspect of usable increment each Sprint</li>
+                <li>Creating plan for the Sprint – Sprint Backlog</li>
+                <li>Following Definition of Done</li>
+                <li>Adapting plan every day towards the Sprint Goal</li>
+                <li>Holding each other accountable as professionals</li>
+            </ul>
+        </div>
+        <div id="a5_2">
+            <ul>
+                <li>Single person, not a committee</li>
+                <li>Maximized the value of the product resulting from the work of Scrum Team</li>
+                <li>Accountable for effective Product Backlog management. If any change required in
+                    Product Backlog – Product Owner needs to be convinced</li>
+                <li>Develops and communicates Product Goal</li>
+                <li>Creates and clearly communicate Product Backlog</li>
+                <li>Orders Product Backlog</li>
+                <li>Ensures that the Product Backlog is transparent, visible and understood</li>
+            </ul>
+        </div>
+        <div id="a5_3">
+            <ul>
+                <li>Establishes Scrum</li>
+                <li>Helps everyone to understand Scrum theory and practice. Coaches the team members.</li>
+                <li>Accountable for Scrum Team effectiveness and improving practices</li>
+            </ul>
+            <b>Leader that serves to</b>
+            <ul>
+                <li>Scrum Team
+                    <ul>
+                        <li>Helps the Scrum Team to focus on creating high-value increments</li>
+                        <li>Causing the removal of impediments during work</li>
+                        <li>Ensuring that all Scrum events take place and are positive, productive,
+                            and kept within the timebox.</li>
+                    </ul>
+                </li>
+                <li>Product Owner
+                    <ul>
+                        <li>Helps find techniques for effective Product Goal detection and Product Backlog management</li>
+                        <li>Helps the Scrum Team to understand the need for clear and concise Product Backlog items</li>
+                        <li>Helps to establish empirical product planning</li>
+                        <li>Facilitates stakeholder collaboration</li>
+                    </ul>
+                </li>
+                <li>Organization
+                    <ul>
+                        <li>Leading, training and coaching the organization in its Scrum adoption</li>
+                        <li>Planning and advising Scrum implementations</li>
+                        <li>Helping employees and stakeholders understand and apply empirical approach for complex work</li>
+                        <li>Removing barriers between stakeholders and Scrum Team</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div id="a6_1">
+            Has a commitment to <b>Product Goal</b>.
+            <ul>
+                <li>Emergent, ordered list of what is needed to improve the product</li>
+                <li>Single source of work undertaken by the Scrum Team</li>
+                <li>Items that can be Done by the Scrum Team within one Sprint are deemed ready for selection in a
+                    Sprint Planning</li>
+                <li>Items becomes “ready” after refining activities</li>
+                <li>Product Backlog refinement is the act of breaking down and further defining Product Backlog items
+                    into smaller more precise items. This is an ongoing activity to add details, such as a description,
+                    order, and size.</li>
+                <li>The Developers who will be doing the work are responsible for the sizing. The Product Owner may
+                    influence the Developers by helping them understand and select trade-offs.</li>
+            </ul>
+        </div>
+        <div id="a6_2">
+            Has a commitment to <b>Sprint Goal</b>.
+            <ul>
+                <li>Composed of:
+                    <ul>
+                        <li>Sprint Goal (“why”)</li>
+                        <li>Product Backlog items selected for the Sprint (“what”)</li>
+                        <li>Actionable plan for delivering the increment (“how”)</li>
+                    </ul>
+                </li>
+                <li>Highly visible, real-time picture of the work to achieve the Sprint Goal</li>
+                <li>Created by Developers for Developers</li>
+                <li>Updated throughout the Sprint as more is learned</li>
+                <li>Should have enough detail for progress inspection in the Daily Scrum. </li>
+            </ul>
+        </div>
+        <div id="a6_3">
+            Has a commitment to <b>Definition of Done</b>.
+            <ul>
+                <li>Concrete stepping stone toward the Product Goal</li>
+                <li>Thoroughly verified, ensuring that all Increments work together</li>
+                <li>In order to provide value, the Increment must be usable.</li>
+                <li>Multiple Increments may be created within a Sprint and presented at the Sprint Review</li>
+                <li>Increment may be delivered to stakeholders prior to the end of the Sprint.</li>
+                <li>Sprint Review should never be considered a gate to releasing value.</li>
+                <li>Work cannot be considered part of an Increment unless it meets the Definition of Done.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hidden">
+        <div id="a7_1">
+            <ul>
+                <li>Вescribes a future state of the product - is the long-term objective for the Scrum Team</li>
+                <li>Objectives must fulfill (or abandon) one objective before taking on the next</li>
+            </ul>
+        </div>
+        <div id="a7_2">
+            <ul>
+                <li>Single objective for the Sprint</li>
+                <li>Although the Sprint Goal is a commitment by the Developers, it provides flexibility in
+                    terms of the exact work needed to achieve it.</li>
+                <li>Creates coherence and focus, encouraging the Scrum Team to work together</li>
+                <li>Created during the Sprint Planning and added to the Sprint Backlog</li>
+                <li>If the work turns out to be different than they expected, Developers collaborate with the
+                    Product Owner to negotiate the scope of the Sprint Backlog within the Sprint without affecting
+                    the Sprint Goal. </li>
+            </ul>
+        </div>
+        <div id="a7_3">
+            <ul>
+                <li>Formal description of the state of the Increment when it meets the quality measures required for
+                    the product</li>
+                <li>The moment a Product Backlog item meets the Definition of Done, an Increment is born</li>
+                <li>Creates transparency by providing everyone a shared understanding of what work was completed as
+                    part of the Increment</li>
+                <li>If a Product Backlog item does not meet the Definition of Done, it cannot be released or even
+                    presented at the Sprint Review. Instead, it returns to the Product Backlog for future consideration.</li>
+                <li>Definition of Done for an increment is part of the standards of the organization, all Scrum Teams
+                    must follow it as a minimum. If it is not an organizational standard, the Scrum Team must create a
+                    Definition of Done appropriate for the product.</li>
             </ul>
         </div>
     </div>
